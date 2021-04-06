@@ -1,0 +1,9 @@
+oldredditredirect.js application/javascript
+(function() 
+{
+    'use strict';
+ 
+    var URL = window.location.toString();
+    URL = URL.replace("https://www.reddit.com/", "https://old.reddit.com/");
+    window.location.replace(URL);
+})();
