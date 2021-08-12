@@ -3,4 +3,5 @@ oldredditredirect.js application/javascript
 {
     if( /(^|\.)old.reddit\.com$/.test(document.location.hostname) === true ) { return; }
         document.location = document.URL.replace('www.reddit.com','old.reddit.com');
+        document.location = document.URL.replace('amp.reddit.com','old.reddit.com');
 })();
